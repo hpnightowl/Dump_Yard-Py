@@ -1,2 +1,6 @@
 x=str(input())
-print(x)
+y=x[::-1]
+if x==y:
+    print("Its Palindrome")
+else:
+    print("Not Palindrome")
