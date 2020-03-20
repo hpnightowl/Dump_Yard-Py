@@ -12,9 +12,15 @@ def btn_click(x1,y1,item):
    if item%2 != 0:
         ch = Label(window,text="X",fg = "red",bg = "white",font=("arial",50,"bold")).place(x=x1+40,y=y1+8)
    else:
-        ch = Label(window,text="O",fg = "red",bg = "white",font=("arial",50,"bold")).place(x=x1+40,y=y1+8)
-       
-chance = 1
+        ch = Label(window,text="O",fg = "blue",bg = "white",font=("arial",50,"bold")).place(x=x1+40,y=y1+8)
+
+#ScoreBoards
+ps1= Label(window,text="Score: ",fg="red",font=("aerial",20,"bold")).place(x=20,y=4)
+ps2 = Label(window,text="Score: ",fg="blue",font=("aerial",20,"bold")).place(x=330,y=4)
+
+
+#Buttons
+chance = 2
 blank1 = Button(window, text=" ", fg="black", width=15, height=5, bd=0, bg="#fff", cursor="hand2",
              command=lambda: btn_click(40,150,chance)).place(x=40,y=150)
 blank2 = Button(window, text=" ", fg="black", width=15, height=5, bd=0, bg="#fff", cursor="hand2",
